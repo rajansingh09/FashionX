@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/frontend/css/home.css">
+    <link rel="stylesheet" href="/frontend/css/Flashsale.css">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="#" class="logo animated-logo">FashionX</a>
+                <div class="nav-center">
+                    <ul class="nav-links">
+                        <li><a href="Home.html" class="nav-btn">Home</a></li>
+                        <li><a href="Shop.html" class="nav-btn">Shop</a></li>
+                        <li><a href="Flash Sale.html" class="nav-btn">Flash Sale</a></li>
+                        <li class="mobile-login"><a href="login.html" class="login-btn">Login</a></li>
+                    </ul>
+                </div>
+                <div class="search-box">
+                     <input type="text" placeholder="Search products" class="search-input" onkeypress="handleSearch(event)">
+                </div>
+                <div class="nav-right">
+                  <a href="login.html" class="login-btn desktop-login">Login</a>
+                </div>
+                <div class="cart-icon-container">
+                    <a href="cart.html" class="cart-icon" style="text-decoration: none;">
+                        <i class="fa-solid fa-cart-shopping" style="color: black;"></i>
+                        <span class="cart-count" style="color: black;">0</span>
+                    </a>
+                  </div>
+                <div class="menu-icon animated-icon">&#9776;</div>
+            </div>
+        </nav>
+        
+        <div class="flash-sale-container">
+            <div class="sale-header">
+                <h1>⚡ Flash Sale - Limited Time Only! ⚡</h1>
+                <p>Get your favorite fashion items at unbeatable prices before the time runs out! Hurry, offers valid only while stocks last.</p>
+            </div>
+            <section class="new-arrivals">
+                <div class="product-grid">
+                    <div class="product-card animated-card">
+                        <a href="Shop.html" class="card-link">
+                            <div class="image-container">
+                                <img src="https://plus.unsplash.com/premium_photo-1683141202259-ee13ddd953fc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8U3R5bGlzaCUyMEphY2tldHxlbnwwfHwwfHx8MA%3D%3D" alt="Product 1" class="product-image">
+                            </a>
+                            <button class="wishlist-btn" onclick="addToWishlist('Stylish Jacket')"><span class="heart-icon">&#10084;</span></button>
+                        </div>
+                        <h3 class="product-title">Stylish Jacket</h3>
+                        <div class="price-container">
+                            <span class="original-price">₹10,799</span>
+                            <span class="discounted-price">₹8,299</span>
+                            <span class="discount-percent">23% OFF</span>
+                        </div>
+                    </div>
+                    <div class="product-card animated-card">
+                        <a href="Shop.html" class="card-link">
+                            <div class="image-container">
+                                <img src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="Product 2" class="product-image">
+                            </a>
+                            <button class="wishlist-btn" onclick="addToWishlist('Elegant Dress')"><span class="heart-icon">&#10084;</span></button>
+                        </div>
+                        <h3 class="product-title">Elegant Dress</h3>
+                        <div class="price-container">
+                            <span class="original-price">₹13,299</span>
+                            <span class="discounted-price">₹10,799</span>
+                            <span class="discount-percent">19% OFF</span>
+                        </div>
+                    </div>
+                    <div class="product-card animated-card">
+                        <a href="Shop.html" class="card-link">
+                            <div class="image-container">
+                                <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Product 3" class="product-image">
+                            </a>
+                            <button class="wishlist-btn" onclick="addToWishlist('Casual Shirt')"><span class="heart-icon">&#10084;</span></button>
+                        </div>
+                        <h3 class="product-title">Casual Shirt</h3>
+                        <div class="price-container">
+                            <span class="original-price">₹5,799</span>
+                            <span class="discounted-price">₹4,149</span>
+                            <span class="discount-percent">29% OFF</span>
+                        </div>
+                    </div>
+                    <div class="product-card animated-card">
+                        <a href="Shop.html" class="card-link">
+                            <div class="image-container">
+                                <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Product 4" class="product-image">
+                            </a>
+                            <button class="wishlist-btn" onclick="addToWishlist('Trendy Jeans')"><span class="heart-icon">&#10084;</span></button>
+                        </div>
+                        <h3 class="product-title">Trendy Jeans</h3>
+                        <div class="price-container">
+                            <span class="original-price">₹8,299</span>
+                            <span class="discounted-price">₹6,649</span>
+                            <span class="discount-percent">20% OFF</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-section">
+                        <h4 class="footer-title">ONLINE SHOPPING</h4>
+                        <ul class="footer-links">
+                            <li><a href="Shop.html">Men</a></li>
+                            <li><a href="Shop.html">Women</a></li>
+                            <li><a href="Shop.html">Kids</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="footer-section">
+                        <h4 class="footer-title">USEFUL LINKS</h4>
+                        <ul class="footer-links">
+                            <li><a href="Blog.html">Blog</a></li>
+                            <li><a href="Career.html">Careers</a></li>
+                            <li><a href="Customer Policy.html">Customer Policies</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="footer-section">
+                        <h4 class="footer-title">CONTACT US</h4>
+                        <ul class="footer-links">
+                            <li><a href="Faq.html">FAQ</a></li>
+                            <li><a href="T&C.html">T&C</a></li>
+                            <li><a href="Term of Use.html">Terms Of Use</a></li>
+                            <li><a href="Track Order.html">Track Orders</a></li>
+                            <li><a href="Shipping.html">Shipping</a></li>
+                            <li><a href="Cencelling.html">Cancellation</a></li>
+                            <li><a href="Returns.html">Returns</a></li>
+                            <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="footer-section social-section">
+                        <h4 class="footer-title">KEEP IN TOUCH</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 <span class="logo" style="font-size: inherit; color: #ff6b6b; transition: transform 0.3s ease;">FashionX</span>. All rights reserved.</p>
+                </div>
+            </footer>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <script src="/frontend/js/script.js"></script>
+    <script src="/frontend/js/Fashsale.js"></script>
+</body>
+</html>

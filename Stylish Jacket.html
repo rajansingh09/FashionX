@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/frontend/css/home.css">
+    <link rel="stylesheet" href="/frontend/css/Stylish Jacket.css">
+    <title>FashionX</title>
+</head>
+<body>
+    <body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo animated-logo">FashionX</a>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="Home.html" class="nav-btn">Home</a></li>
+                    <li><a href="Shop.html" class="nav-btn">Shop</a></li>
+                    <li><a href="Flash Sale.html" class="nav-btn">Flash Sale</a></li>
+                    <li class="mobile-login"><a href="login.html" class="login-btn">Login</a></li>
+                </ul>
+            </div>
+            <div class="search-box">
+                 <input type="text" placeholder="Search products" class="search-input" onkeypress="handleSearch(event)">
+            </div>
+            <div class="nav-right">
+              <a href="login.html" class="login-btn desktop-login">Login</a>
+            </div>
+            <div class="cart-icon-container">
+                <a href="cart.html" class="cart-icon" style="text-decoration: none;">
+                    <i class="fa-solid fa-cart-shopping" style="color: black;"></i>
+                    <span class="cart-count" style="color: black;">0</span>
+                </a>
+              </div>
+            <div class="menu-icon animated-icon">&#9776;</div>
+        </div>
+    </nav>
+
+    <section class="product-details">
+        <div class="product-container">
+            <div class="product-images">
+                <div class="main-image">
+                    <img src="https://plus.unsplash.com/premium_photo-1683141202259-ee13ddd953fc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8U3R5bGlzaCUyMEphY2tldHxlbnwwfHwwfHx8MA%3D%3D" alt="Stylish Jacket">
+                </div>
+                <div class="thumbnail-images">
+                    <img src="https://images.unsplash.com/photo-1602293589930-45aad59ba3ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Jacket Back View">
+                    <img src="https://images.unsplash.com/photo-1606768666853-580c20beb6be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Jacket Detail">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h1 class="product-title">Stylish Jacket</h1>
+                <div class="product-rating">
+                    <span class="stars">★★★★☆</span>
+                    <span class="rating-count">(4.2/5 - 128 reviews)</span>
+                </div>
+                <div class="price-container">
+                    <span class="original-price">₹10,799</span>
+                    <span class="discounted-price">₹8,299</span>
+                    <span class="discount-percent">23% OFF</span>
+                </div>
+                
+                <div class="product-description">
+                    <h3>Product Details</h3>
+                    <ul>
+                        <li>Premium quality leather material</li>
+                        <li>Available in Black, Brown, and Navy Blue</li>
+                        <li>Inner lining with soft fleece for warmth</li>
+                        <li>Multiple pockets for functionality</li>
+                        <li>Adjustable waist and cuffs</li>
+                        <li>Water-resistant outer layer</li>
+                    </ul>
+                </div>
+
+                <div class="size-selection">
+                    <label for="size">Select Size:</label>
+                    <select id="size" name="size">
+                        <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                        <option value="XL">Extra Large</option>
+                    </select>
+                </div>
+
+                <div class="quantity-selection">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                </div>
+
+                <div class="action-buttons">
+                    <button class="add-to-cart" onclick="addToCart('Stylish Jacket')">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                    </button>
+                    <button class="buy-now" onclick="buyNow('Stylish Jacket')">
+                        <i class="fas fa-bolt"></i> Buy Now
+                    </button>
+                </div>
+
+                <div class="product-specifications">
+                    <h3>Specifications</h3>
+                    <table>
+                        <tr>
+                            <th>Material</th>
+                            <td>Genuine Leather</td>
+                        </tr>
+                        <tr>
+                            <th>Closure</th>
+                            <td>Zipper</td>
+                        </tr>
+                        <tr>
+                            <th>Season</th>
+                            <td>All Season</td>
+                        </tr>
+                        <tr>
+                            <th>Care Instructions</th>
+                            <td>Dry Clean Only</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="similar-products">
+            <h2>Similar Products</h2>
+            <div class="product-grid">
+                <div class="product-card animated-card">
+                    <a href="Shop.html" class="card-link">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=736&q=80" alt="Premium Jacket" class="product-image">
+                        </a>
+                        <button class="wishlist-btn" onclick="addToWishlist('Premium Jacket')"><span class="heart-icon">&#10084;</span></button>
+                    </div>
+                    <h3 class="product-title">Premium Jacket</h3>
+                    <div class="price-container">
+                        <span class="original-price">₹16,599</span>
+                        <span class="discounted-price">₹12,449</span>
+                        <span class="discount-percent">25% OFF</span>
+                    </div>
+                </div>
+
+                <div class="product-card animated-card">
+                    <a href="Shop.html" class="card-link">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1594032194509-0056023973b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Classic Blazer" class="product-image">
+                        </a>
+                        <button class="wishlist-btn" onclick="addToWishlist('Classic Blazer')"><span class="heart-icon">&#10084;</span></button>
+                    </div>
+                    <h3 class="product-title">Classic Blazer</h3>
+                    <div class="price-container">
+                        <span class="original-price">₹14,999</span>
+                        <span class="discounted-price">₹11,999</span>
+                        <span class="discount-percent">20% OFF</span>
+                    </div>
+                </div>
+
+                <div class="product-card animated-card">
+                    <a href="Shop.html" class="card-link">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1602293589930-45aad59ba3ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Leather Biker Jacket" class="product-image">
+                        </a>
+                        <button class="wishlist-btn" onclick="addToWishlist('Leather Biker Jacket')"><span class="heart-icon">&#10084;</span></button>
+                    </div>
+                    <h3 class="product-title">Leather Biker Jacket</h3>
+                    <div class="price-container">
+                        <span class="original-price">₹18,999</span>
+                        <span class="discounted-price">₹15,199</span>
+                        <span class="discount-percent">20% OFF</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="customer-reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review-form">
+                <h3>Write a Review</h3>
+                <form id="reviewForm">
+                    <div class="rating-input">
+                        <label>Your Rating:</label>
+                        <div class="star-rating">
+                            <span class="star" data-value="1">☆</span>
+                            <span class="star" data-value="2">☆</span>
+                            <span class="star" data-value="3">☆</span>
+                            <span class="star" data-value="4">☆</span>
+                            <span class="star" data-value="5">☆</span>
+                        </div>
+                    </div>
+                    <textarea id="reviewText" placeholder="Write your review here..." required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+
+            <div class="reviews-list">
+                <div class="review-item">
+                    <div class="review-header">
+                        <span class="reviewer-name">John Doe</span>
+                        <span class="review-rating">★★★★☆</span>
+                    </div>
+                    <p class="review-text">Great jacket! Fits perfectly and looks stylish. The quality is excellent for the price.</p>
+                </div>
+                <div class="review-item">
+                    <div class="review-header">
+                        <span class="reviewer-name">Jane Smith</span>
+                        <span class="review-rating">★★★★★</span>
+                    </div>
+                    <p class="review-text">Absolutely love this jacket. It's warm, comfortable, and very fashionable. Highly recommend!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4 class="footer-title">ONLINE SHOPPING</h4>
+                <ul class="footer-links">
+                    <li><a href="Shop.html">Men</a></li>
+                    <li><a href="Shop.html">Women</a></li>
+                    <li><a href="Shop.html">Kids</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-title">USEFUL LINKS</h4>
+                <ul class="footer-links">
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Career.html">Careers</a></li>
+                    <li><a href="Customer Policy.html">Customer Policies</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-title">CONTACT US</h4>
+                <ul class="footer-links">
+                    <li><a href="Faq.html">FAQ</a></li>
+                    <li><a href="T&C.html">T&C</a></li>
+                    <li><a href="Term of Use.html">Terms Of Use</a></li>
+                    <li><a href="Track Order.html">Track Orders</a></li>
+                    <li><a href="Shipping.html">Shipping</a></li>
+                    <li><a href="Cencelling.html">Cancellation</a></li>
+                    <li><a href="Returns.html">Returns</a></li>
+                    <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social-section">
+                <h4 class="footer-title">KEEP IN TOUCH</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 <span class="logo" style="font-size: inherit; color: #ff6b6b; transition: transform 0.3s ease;">FashionX</span>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="/frontend/js/script.js"></script>
+    <script src="/frontend/js/Stylish Jacket.js"></script>
+</body>
+</html>

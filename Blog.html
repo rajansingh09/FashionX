@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/frontend/css/home.css">
+    <link rel="stylesheet" href="/frontend/css/Blog.css">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="#" class="logo animated-logo">FashionX</a>
+                <div class="nav-center">
+                    <ul class="nav-links">
+                        <li><a href="Home.html" class="nav-btn">Home</a></li>
+                        <li><a href="Shop.html" class="nav-btn">Shop</a></li>
+                        <li><a href="Flash Sale.html" class="nav-btn">Flash Sale</a></li>
+                        <li class="mobile-login"><a href="login.html" class="login-btn">Login</a></li>
+                    </ul>
+                </div>
+                <div class="search-box">
+                     <input type="text" placeholder="Search products" class="search-input" onkeypress="handleSearch(event)">
+                </div>
+                <div class="nav-right">
+                  <a href="login.html" class="login-btn desktop-login">Login</a>
+                </div>
+                <div class="cart-icon-container">
+                    <a href="cart.html" class="cart-icon" style="text-decoration: none;">
+                        <i class="fa-solid fa-cart-shopping" style="color: black;"></i>
+                        <span class="cart-count" style="color: black;">0</span>
+                    </a>
+                  </div>
+                <div class="menu-icon animated-icon">&#9776;</div>
+            </div>
+        </nav>
+
+        <main class="blog-container">
+            <h1 class="blog-title">FashionX Blog</h1>
+            
+            <section class="blog-grid">
+                <article class="blog-post animated-card">
+                    <div class="post-image">
+                        <img src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fashion Trends">
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title">Top 10 Fashion Trends for 2024</h2>
+                        <p class="post-excerpt">Discover the hottest fashion trends that will dominate 2024. From bold colors to sustainable fabrics, we've got you covered...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-post animated-card">
+                    <div class="post-image">
+                        <img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sustainable Fashion">
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title">The Rise of Sustainable Fashion</h2>
+                        <p class="post-excerpt">Learn how the fashion industry is embracing sustainability and what you can do to make eco-friendly choices...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-post animated-card">
+                    <div class="post-image">
+                        <img src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Seasonal Wardrobe">
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title">Building the Perfect Seasonal Wardrobe</h2>
+                        <p class="post-excerpt">Essential tips for creating a versatile wardrobe that transitions seamlessly through the seasons...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-post animated-card">
+                    <div class="post-image">
+                        <img src="https://images.pexels.com/photos/842811/pexels-photo-842811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Accessories Guide">
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title">Accessorizing Like a Pro</h2>
+                        <p class="post-excerpt">Master the art of accessorizing with our comprehensive guide to elevating any outfit...</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </section>
+
+            <div class="pagination">
+                <a href="Blog.html" class="page-btn">1</a>
+                <a href="#" class="page-btn">2</a>
+                <a href="#" class="page-btn">3</a>
+                <a href="#" class="page-btn next">Next →</a>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4 class="footer-title">ONLINE SHOPPING</h4>
+                    <ul class="footer-links">
+                        <li><a href="Shop.html">Men</a></li>
+                        <li><a href="Shop.html">Women</a></li>
+                        <li><a href="Shop.html">Kids</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-section">
+                    <h4 class="footer-title">USEFUL LINKS</h4>
+                    <ul class="footer-links">
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Career.html">Careers</a></li>
+                        <li><a href="Customer Policy.html">Customer Policies</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-section">
+                    <h4 class="footer-title">CONTACT US</h4>
+                    <ul class="footer-links">
+                        <li><a href="Faq.html">FAQ</a></li>
+                        <li><a href="T&C.html">T&C</a></li>
+                        <li><a href="Term of Use.html">Terms Of Use</a></li>
+                        <li><a href="Track Order.html">Track Orders</a></li>
+                        <li><a href="Shipping.html">Shipping</a></li>
+                        <li><a href="Cencelling.html">Cancellation</a></li>
+                        <li><a href="Returns.html">Returns</a></li>
+                        <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-section social-section">
+                    <h4 class="footer-title">KEEP IN TOUCH</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 <span class="logo" style="font-size: inherit; color: #ff6b6b; transition: transform 0.3s ease;">FashionX</span>. All rights reserved.</p>
+            </div>
+        </footer>
+                   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="/frontend/js/script.js"></script>
+<script src="/frontend/js/shop.js"></script>
+</body>
+</html>
